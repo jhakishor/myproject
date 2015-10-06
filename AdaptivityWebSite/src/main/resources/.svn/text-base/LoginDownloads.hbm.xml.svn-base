@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+		"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping auto-import="true" default-lazy="false">
+
+<class 
+    name="com.adaptivity.blueprint4it.dao.hibernate.LoginDownloads" 
+    table="login_downloads">
+
+    <id
+        name="id"
+        type="java.lang.Integer"
+        column="id">
+        
+    <generator class="increment" />
+    </id>
+
+    <property
+        name="fileName"
+        type="java.lang.String"
+        column="fileName"
+        not-null="false"
+        unique="true"
+        length="200"
+    />
+    <property
+        name="timeStamp"
+        type="java.lang.String"
+        column="timeStamp"
+        not-null="true"
+        unique="false"
+        length="100"
+    />
+    <many-to-one name="loginUser"
+                 class="com.adaptivity.blueprint4it.dao.hibernate.Login"
+                 column="loginId"
+                 not-null="true"
+                 cascade="none"
+     />
+</class>
+</hibernate-mapping>
+

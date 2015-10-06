@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/2049/CWEB/trunk/AdaptivityWebSite/src/main/java/com/adaptivity/blueprint4it/web/struts/form
+END
+UserRegisterForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/!svn/ver/2046/CWEB/trunk/AdaptivityWebSite/src/main/java/com/adaptivity/blueprint4it/web/struts/form/UserRegisterForm.java
+END
+UserLoginForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/!svn/ver/2049/CWEB/trunk/AdaptivityWebSite/src/main/java/com/adaptivity/blueprint4it/web/struts/form/UserLoginForm.java
+END
+ChangePasswordForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/!svn/ver/1888/CWEB/trunk/AdaptivityWebSite/src/main/java/com/adaptivity/blueprint4it/web/struts/form/ChangePasswordForm.java
+END
+UserForgetPasswordForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/!svn/ver/1691/CWEB/trunk/AdaptivityWebSite/src/main/java/com/adaptivity/blueprint4it/web/struts/form/UserForgetPasswordForm.java
+END

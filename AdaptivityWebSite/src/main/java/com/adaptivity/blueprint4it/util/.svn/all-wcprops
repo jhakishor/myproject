@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/4308/CWEB/trunk/AdaptivityWebSite/src/main/java/com/adaptivity/blueprint4it/util
+END
+MailUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/4308/CWEB/trunk/AdaptivityWebSite/src/main/java/com/adaptivity/blueprint4it/util/MailUtil.java
+END
+LoginUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/2068/CWEB/trunk/AdaptivityWebSite/src/main/java/com/adaptivity/blueprint4it/util/LoginUtil.java
+END
+RssFeedParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/3284/CWEB/trunk/AdaptivityWebSite/src/main/java/com/adaptivity/blueprint4it/util/RssFeedParser.java
+END
+RSSItemVO.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/3272/CWEB/trunk/AdaptivityWebSite/src/main/java/com/adaptivity/blueprint4it/util/RSSItemVO.java
+END
+SortElementsById.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/!svn/ver/3272/CWEB/trunk/AdaptivityWebSite/src/main/java/com/adaptivity/blueprint4it/util/SortElementsById.java
+END

@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/4447/CWEB/trunk/AdaptivityWebSite/src/main/webapp/WEB-INF
+END
+struts-logic.tld
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/1544/CWEB/trunk/AdaptivityWebSite/src/main/webapp/WEB-INF/struts-logic.tld
+END
+struts-tiles.tld
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/1544/CWEB/trunk/AdaptivityWebSite/src/main/webapp/WEB-INF/struts-tiles.tld
+END
+.struts-config.xml.strutsdia
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/1544/CWEB/trunk/AdaptivityWebSite/src/main/webapp/WEB-INF/.struts-config.xml.strutsdia
+END
+applicationContext-hibernate.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/6898/CWEB/trunk/AdaptivityWebSite/src/main/webapp/WEB-INF/applicationContext-hibernate.xml
+END
+struts-config.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/4708/CWEB/trunk/AdaptivityWebSite/src/main/webapp/WEB-INF/struts-config.xml
+END
+struts-nested.tld
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/1544/CWEB/trunk/AdaptivityWebSite/src/main/webapp/WEB-INF/struts-nested.tld
+END
+struts-html.tld
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/1544/CWEB/trunk/AdaptivityWebSite/src/main/webapp/WEB-INF/struts-html.tld
+END
+downloader.properties
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/6897/CWEB/trunk/AdaptivityWebSite/src/main/webapp/WEB-INF/downloader.properties
+END
+struts-bean.tld
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/1544/CWEB/trunk/AdaptivityWebSite/src/main/webapp/WEB-INF/struts-bean.tld
+END
+validation.xml
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/1544/CWEB/trunk/AdaptivityWebSite/src/main/webapp/WEB-INF/validation.xml
+END
+validator-rules.xml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/1544/CWEB/trunk/AdaptivityWebSite/src/main/webapp/WEB-INF/validator-rules.xml
+END
+web.xml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/1593/CWEB/trunk/AdaptivityWebSite/src/main/webapp/WEB-INF/web.xml
+END
+jdbc.properties
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/1988/CWEB/trunk/AdaptivityWebSite/src/main/webapp/WEB-INF/jdbc.properties
+END
+tiles-defs.xml
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/1544/CWEB/trunk/AdaptivityWebSite/src/main/webapp/WEB-INF/tiles-defs.xml
+END

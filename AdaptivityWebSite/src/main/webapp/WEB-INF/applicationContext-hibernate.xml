@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<!--
+  - Application context definition for login Login Application on Hibernate.
+	-->
+<beans>
+
+	<!-- ========================= RESOURCE DEFINITIONS ========================= -->
+  
+	<!-- Configurer that replaces ${...} placeholders with values from a properties file -->
+	<!-- (in this case, JDBC-related settings for the dataSource definition below) -->
+	<bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property  name="locations">
+	      <list>
+	        <value>/WEB-INF/downloader.properties</value>
+	        <value>/WEB-INF/jdbc.properties</value>
+	      </list>
+	    </property>
+	</bean>
+
+	<!-- Local DataSource that works in any environment -->
+	<!-- Note that DriverManagerDataSource does not pool; it is not intended for production -->
+	
+	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName"><value>${jdbc.driverClassName}</value></property>
+		<property name="url"><value>${jdbc.url}</value></property>
+		<property name="username"><value>${jdbc.username}</value></property>
+		<property name="password"><value>${jdbc.password}</value></property>
+
+	</bean>
+	
+	<bean id="downloadProperties" class="com.adaptivity.blueprint4it.beans.DownloadProperties">
+		<property name="windowsUrl"><value>${download.url.windows}</value></property>
+		<property name="macUrl"><value>${download.url.mac}</value></property>
+		<property name="linuxUrl"><value>${download.url.linux}</value></property>
+		<property name="windowsFileSize"><value>${fileSize.windows}</value></property>
+		<property name="macFileSize"><value>${fileSize.mac}</value></property>
+		<property name="linuxFileSize"><value>${fileSize.linux}</value></property>		
+		<property name="contentType"><value>${download.content.type}</value></property>
+		<property name="windowsFileName"><value>${download.filename.windows}</value></property>
+		<property name="macFileName"><value>${download.filename.mac}</value></property>
+		<property name="linuxFileName"><value>${download.filename.linux}</value></property>
+		<property name="registrationUrl"><value>${registration.url.email}</value></property>
+		<property name="supportAddress"><value>${support.address}</value></property>
+	    <property name="salesAddress"><value>${sales.address}</value></property>
+	    <property name="ceoBlogFeed"><value>${ceoblog.feed}</value></property>
+		<property name="blueprint4itBlogFeed"><value>${blueprint4itblog.feed}</value></property>
+		<property name="feedSize"><value>${feed.size}</value></property>
+		<property name="blueprintTutorialUrl"><value>${download.tutorial.url}</value></property>
+		<property name="blueprintTutorialFileName"><value>${download.tutorial.fileName}</value></property>
+		
+	</bean>
+
+	<!-- JNDI DataSource for J2EE environments -->
+
+	<!-- Hibernate SessionFactory -->
+	<bean id="sessionFactory" class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="dataSource"><ref local="dataSource"/></property>
+		<property name="mappingResources">
+		<list>
+			<value>Login.hbm.xml</value>
+			<value>Menu.hbm.xml</value>
+			<value>InvalidDomains.hbm.xml</value>
+			<value>LoginDownloads.hbm.xml</value>
+		</list>
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">${hibernate.dialect}</prop>
+				<prop key="hibernate.show_sql">true</prop>
+			</props>
+		</property>
+	</bean>
+
+
+	<!-- Transaction manager for a single Hibernate SessionFactory (alternative to JTA) -->
+	<bean id="transactionManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory"><ref local="sessionFactory"/></property>
+	</bean>
+
+
+	<!-- ========================= BUSINESS OBJECT DEFINITIONS ========================= -->
+
+	<!--
+	 Data access object: Hibernate implementation.
+    -->
+
+	<bean id="HibernateSpringDaoTarget" class="com.adaptivity.blueprint4it.dao.SpringHibernateDAOImpl">
+		<property name="sessionFactory"><ref local="sessionFactory"/></property>
+	</bean>
+
+	<!--
+		- Transactional proxy for Login Application central data access object.
+		-
+		- Defines specific transaction attributes with "readOnly" markers,
+		- which is an optimization that is particularly valuable with Hibernate
+		- (to suppress unnecessary flush attempts for read-only operations).
+		-
+		- Note that in a real-life app with multiple transaction proxies,
+		- you will probably want to use parent and child bean definitions
+		- as described in the manual, to reduce duplication.
+    -->
+
+	<bean id="SpringHibernateDao" class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
+		<property name="transactionManager"><ref local="transactionManager"/></property>
+		<property name="target"><ref local="HibernateSpringDaoTarget"/></property>
+		<property name="transactionAttributes">
+			<props>
+				<prop key="get*">PROPAGATION_REQUIRED,readOnly</prop>
+				<prop key="find*">PROPAGATION_REQUIRED,readOnly</prop>
+				<prop key="load*">PROPAGATION_REQUIRED,readOnly</prop>
+				<prop key="store*">PROPAGATION_REQUIRED</prop>
+			</props>
+		</property>
+	</bean>
+
+	<!-- Email Service-->
+	<bean id="mailbean" class="com.adaptivity.blueprint4it.web.common.SendMail">
+<!--    <property name="strSmtp"><value>mail2.synechron.com</value></property>-->
+		<property name="strSmtp"><value>s2smtpout.secureserver.net</value></property>
+	</bean>
+	<bean id="strongEncryptor" class="org.jasypt.encryption.pbe.StandardPBEStringEncryptor">
+	    <property name="algorithm">
+	        <value>PBEWithMD5AndTripleDES</value>
+	    </property>
+	    <property name="password">
+	        <value>jasypt</value>
+	    </property>
+  </bean>
+	
+</beans>

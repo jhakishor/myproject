@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROCESS model-entity="StrutsProcess">
+ <PROCESS-ITEM ID="welcome" NAME="forward0" PATH="/Welcome.do"
+  SHAPE="32,17,0,0" TARGET="action4" TITLE="welcome" TYPE="forward" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM ID="#userlogin" NAME="action0" PATH="/userlogin"
+  SHAPE="32,129,0,0" TITLE="UserLoginForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="failure" NAME="forward0"
+   PATH="/pages/user/userlogin.jsp" TARGET="page0" TITLE="failure"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="/pages/home.jsp" TARGET="page1" TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#changepassword" NAME="action1"
+  PATH="/changepassword" SHAPE="32,273,0,0" TITLE="ChangePasswordForm"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="failure" NAME="forward0"
+   PATH="/pages/user/changepassword.jsp" TARGET="page2" TITLE="failure"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="/pages/user/passwordSend.jsp" TARGET="page3" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#userforgetpassword" NAME="action2"
+  PATH="/userforgetpassword" SHAPE="32,417,0,0"
+  TITLE="UserForgetPasswordForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="failure" NAME="forward0"
+   PATH="/pages/user/forgetpassword.jsp" TARGET="page4" TITLE="failure"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="/pages/user/passwordSend.jsp" TARGET="page3" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#userregister" NAME="action3" PATH="/userregister"
+  SHAPE="32,673,0,0" TITLE="UserRegisterForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="input" NAME="forward0"
+   PATH="/pages/user/userRegister.jsp" TARGET="page5" TITLE="input"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="updated" NAME="forward1"
+   PATH="/pages/user/updatesuccess.jsp" TARGET="page6" TITLE="updated"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward2"
+   PATH="/pages/user/registersuccess.jsp" TARGET="page7" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#Welcome" NAME="action4" PATH="/Welcome"
+  SHAPE="256,33,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward0"
+   PATH="/pages/home.jsp" TARGET="page1" TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="page0" PATH="/pages/user/userlogin.jsp"
+  SHAPE="256,146,0,0" SUBTYPE="jsp" TITLE="userlogin.jsp" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page1" PATH="/pages/home.jsp" SHAPE="480,18,0,0"
+  SUBTYPE="jsp" TITLE="home.jsp" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page2" PATH="/pages/user/changepassword.jsp"
+  SHAPE="256,290,0,0" SUBTYPE="jsp" TITLE="changepassword.jsp"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page3" PATH="/pages/user/passwordSend.jsp"
+  SHAPE="256,434,0,0" SUBTYPE="jsp" TITLE="passwordSend.jsp" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page4" PATH="/pages/user/forgetpassword.jsp"
+  SHAPE="256,578,0,0" SUBTYPE="jsp" TITLE="forgetpassword.jsp"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page5" PATH="/pages/user/userRegister.jsp"
+  SHAPE="272,690,0,0" SUBTYPE="jsp" TITLE="userRegister.jsp" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page6" PATH="/pages/user/updatesuccess.jsp"
+  SHAPE="272,866,0,0" SUBTYPE="jsp" TITLE="updatesuccess.jsp"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page7" PATH="/pages/user/registersuccess.jsp"
+  SHAPE="272,978,0,0" SUBTYPE="jsp" TITLE="registersuccess.jsp"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+</PROCESS>

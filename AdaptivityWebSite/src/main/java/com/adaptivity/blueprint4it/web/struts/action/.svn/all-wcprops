@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/4710/CWEB/trunk/AdaptivityWebSite/src/main/java/com/adaptivity/blueprint4it/web/struts/action
+END
+ThoughtLeadershipAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/!svn/ver/3284/CWEB/trunk/AdaptivityWebSite/src/main/java/com/adaptivity/blueprint4it/web/struts/action/ThoughtLeadershipAction.java
+END
+UserRegisterAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/!svn/ver/5253/CWEB/trunk/AdaptivityWebSite/src/main/java/com/adaptivity/blueprint4it/web/struts/action/UserRegisterAction.java
+END
+FileDownloadAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/!svn/ver/6896/CWEB/trunk/AdaptivityWebSite/src/main/java/com/adaptivity/blueprint4it/web/struts/action/FileDownloadAction.java
+END
+UserLoginAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/!svn/ver/4446/CWEB/trunk/AdaptivityWebSite/src/main/java/com/adaptivity/blueprint4it/web/struts/action/UserLoginAction.java
+END
+ChangePasswordAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/!svn/ver/2417/CWEB/trunk/AdaptivityWebSite/src/main/java/com/adaptivity/blueprint4it/web/struts/action/ChangePasswordAction.java
+END
+UserForgetPasswordAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/!svn/ver/2700/CWEB/trunk/AdaptivityWebSite/src/main/java/com/adaptivity/blueprint4it/web/struts/action/UserForgetPasswordAction.java
+END
+LogoutAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/!svn/ver/2417/CWEB/trunk/AdaptivityWebSite/src/main/java/com/adaptivity/blueprint4it/web/struts/action/LogoutAction.java
+END
+BaseAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/!svn/ver/3272/CWEB/trunk/AdaptivityWebSite/src/main/java/com/adaptivity/blueprint4it/web/struts/action/BaseAction.java
+END
+ResourcesAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/!svn/ver/4710/CWEB/trunk/AdaptivityWebSite/src/main/java/com/adaptivity/blueprint4it/web/struts/action/ResourcesAction.java
+END
+WelcomeAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/!svn/ver/6844/CWEB/trunk/AdaptivityWebSite/src/main/java/com/adaptivity/blueprint4it/web/struts/action/WelcomeAction.java
+END
+showUserList.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/!svn/ver/1909/CWEB/trunk/AdaptivityWebSite/src/main/java/com/adaptivity/blueprint4it/web/struts/action/showUserList.java
+END
